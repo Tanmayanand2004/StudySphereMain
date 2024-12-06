@@ -1,0 +1,135 @@
+.navbar-brand {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.pqr {
+    margin-top: 145px;
+}
+
+.navbar-brand:hover {
+    background-color: transparent !important;
+}
+
+body {
+    margin: 0;
+    padding-top: 50px;
+    overflow-x: hidden;
+}
+
+#top_nav {
+    background-color: rgba(35,34,34,100) !important;
+    padding: 0 6%;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 20px;
+    padding-left: 25px;
+}
+
+.u {
+    cursor: pointer;
+    background-color: white;
+    border-radius: 2rem;
+}
+
+.s {
+    cursor: pointer;
+    background-color: white;
+    border-radius: 2rem;
+    margin-right: 20px;
+}
+
+.side {
+    color: rgb(122, 3, 3);
+    border: none;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    font-size: 0.9rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 8px 6px -6px gray;
+    outline: none;
+}
+
+.side:hover {
+    box-shadow: 0 8px 6px -6px gray;
+}
+
+@media (max-width: 900px) {
+    .u {
+        margin-top: 10px; 
+        margin-bottom: 10px;
+    }
+}
+
+.navbar-nav {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.navbar-toggler {
+    background-color: white;
+}
+
+.shad:hover {
+    background-color: rgba(74, 59, 90, 0.574);
+    color: rgb(126, 29, 29);
+}
+
+.btn {
+    font-size: 15px;
+    width: max-content;
+    height: max-content;
+    background-color: white;
+    border-radius: 30px;
+    color: rgb(136, 23, 23);
+    align-items: center;
+    font-weight: bold;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back {
+    background-image: url('assets/finalbg5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.btn1 {
+    border: 1px solid rgb(153, 24, 24);
+    width: 200px;
+    background-color: rgba(20, 19, 19, 0.934);
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-right: 30px;
+    border-radius: 100px;
+    margin-bottom: 40px;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+}
+
+.btn1:hover {
+    background-color: rgb(68, 66, 64);
+}
+
+.cont {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("assets/WhatsApp Image 2024-02-13 at 11.50.27_603fa7dc.jpg");
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: bolder;
+}
