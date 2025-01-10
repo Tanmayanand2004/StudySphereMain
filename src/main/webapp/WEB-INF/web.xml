@@ -1,9 +1,33 @@
-<servlet>
-    <servlet-name>ControllerServlet</servlet-name>
-    <servlet-class>com.studysphere.controller.ControllerServlet</servlet-class>
-</servlet>
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+             http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
 
-<servlet-mapping>
-    <servlet-name>ControllerServlet</servlet-name>
-    <url-pattern>/controller</url-pattern>
-</servlet-mapping>
+    <!-- Define the servlet -->
+    <servlet>
+        <servlet-name>ControllerServlet</servlet-name>
+        <servlet-class>com.studysphere.controller.ControllerServlet</servlet-class>
+        <!-- Load servlet on startup -->
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <!-- Map the servlet to a URL pattern -->
+    <servlet-mapping>
+        <servlet-name>ControllerServlet</servlet-name>
+        <!-- Use a more descriptive URL pattern for better clarity -->
+        <url-pattern>/action</url-pattern> <!-- Change /controller to /action -->
+    </servlet-mapping>
+
+    <!-- Optional: Define error pages -->
+    <error-page>
+        <error-code>404</error-code>
+        <location>/error404.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>500</error-code>
+        <location>/error500.jsp</location>
+    </error-page>
+
+</web-app>
